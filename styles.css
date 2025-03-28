@@ -1,0 +1,68 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgray;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.headertable{
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-style: none;
+    float:right;
+    font-size: larger;
+    background-color: grey;
+}
+.headertable>th, .headertable>td{
+    padding:20px;
+}
+
+.home{
+    background-image: url(./images/dealership.jpg); /* image from https://www.goodcarbadcar.net/the-death-of-the-traditional-dealership/ */
+    background-size: 100%;
+}
+
+.homep{
+    background-color: white;
+    opacity: 70%;
+    border-color: black;
+    border-style: solid;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.homeBox{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.carImage{
+    width: 480px;
+    height: auto;
+    border-radius: 12px;
+    border-style: solid;
+    float:left;
+}
+
+.carInfo{
+    display:flex;
+    flex-wrap: wrap;
+}
+div>div{
+    border-radius: 12px;
+    border-style: solid;
+    padding: 10px;
+}
+ul{
+    text-align: center;
+}
+li{
+    text-align: left;
+}
