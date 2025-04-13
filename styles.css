@@ -289,3 +289,65 @@ h5 {
     border: 0;
     border-radius: 8px;
 }
+/* Car finder page */
+body.finder-page {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Section layout */
+.finder-page .form-section {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.finder-page h3 {
+  text-align: center;
+  color: #003366;
+}
+
+
+.finder-page form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.finder-page form input,
+.finder-page form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.finder-page form input[type="submit"] {
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.finder-page form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.finder-page form fieldset {
+  border: 2px solid #003366;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}

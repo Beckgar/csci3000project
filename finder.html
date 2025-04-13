@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
+<body class="finder-page">  
     <table class="headertable">
         <tr>
             <td><a href = "index.html">Home</a></td>
@@ -15,23 +15,55 @@
             <td><a href="contact-us.html">Contact Us</a></td>
         </tr>
     </table>
-<h1>Car Dealership</h1>
-
-<h2>Car Finder</h2>
-
-<h3>Car Information</h3>
-<form>
-    <label for="make">Vehicle Make</label><br>
-    <input type="text" id="make" name="make"><br>
-
-</form>
-
-<h3>Your Information</h3>
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-
-</form>
+ 
     
+    <section class="form-section">
+        <h3>Vehicle Information Form</h3>
+    <form>
+        <fieldset>
+            <label for="make">Vehicle Make</label><br>
+            <input type="text" id="make" name="make"><br>
+
+            <label for="model">Vehicle Model</label><br>
+            <input type="text" id="model" name="model"><br>
+
+            <label for="year">Year</label><br>
+            <input type="number" id="year" name="year"><br>
+
+            <label for="price">Max Price</label><br>
+            <input type="number" id="price" name="price"><br>
+
+            <label for="type">Vehicle Type</label><br>
+            <select id="type" name="type">
+                <option value="any">Any</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="truck">Truck</option>
+                <option value="coupe">Coupe</option>
+            </select><br>
+        </fieldset>
+
+        <br><input type="submit" value="Find My Car">
+    </form>
+</section>
+
+    <section class="form-section">
+        <h3>Personal Information Form</h3>
+        <form>
+            <fieldset>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+            </fieldset>
+
+            <br><input type="submit" value="Submit Request">
+        </form>
+    </section>
+
 </body>
 </html>
