@@ -20,31 +20,31 @@
     <section class="form-section">
         <h3>Vehicle Information Form</h3>
     <form>
-        <fieldset>
-            <label for="make">Vehicle Make</label><br>
-            <input type="text" id="make" name="make"><br>
-
-            <label for="model">Vehicle Model</label><br>
-            <input type="text" id="model" name="model"><br>
-
-            <label for="year">Year</label><br>
-            <input type="number" id="year" name="year"><br>
-
-            <label for="price">Max Price</label><br>
-            <input type="number" id="price" name="price"><br>
-
-            <label for="type">Vehicle Type</label><br>
-            <select id="type" name="type">
-                <option value="any">Any</option>
-                <option value="sedan">Sedan</option>
-                <option value="suv">SUV</option>
-                <option value="truck">Truck</option>
-                <option value="coupe">Coupe</option>
-            </select><br>
-        </fieldset>
-
-        <br><input type="submit" value="Find My Car">
-    </form>
+        <form>
+            <fieldset>
+                <label for="make">Vehicle Make</label><br>
+                <input type="text" id="make" name="make" required><br>
+        
+                <label for="model">Vehicle Model</label><br>
+                <input type="text" id="model" name="model" required><br>
+        
+                <label for="year">Year</label><br>
+                <input type="number" id="year" name="year" min="1900" max="2099" required><br>
+        
+                <label for="price">Max Price</label><br>
+                <input type="number" id="price" name="price" min="0" required><br>
+        
+                <label for="type">Vehicle Type</label><br>
+                <select id="type" name="type" required>
+                    <option value="">Select a type</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="truck">Truck</option>
+                    <option value="coupe">Coupe</option>
+                </select><br>
+            </fieldset>
+            <br><input type="submit" value="Find My Car">
+        </form>
 </section>
 
     <section class="form-section">
@@ -52,18 +52,18 @@
         <form>
             <fieldset>
                 <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-
+                <input type="text" id="fname" name="fname" required><br>
+        
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-
+                <input type="email" id="email" name="email" required><br>
+        
                 <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone"><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required><br>
             </fieldset>
-
             <br><input type="submit" value="Submit Request">
         </form>
     </section>
 
 </body>
 </html>
+
